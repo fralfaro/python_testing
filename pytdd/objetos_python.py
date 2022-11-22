@@ -1,7 +1,4 @@
-
-def sumar_dos_numeros(
-        numero_1:float,
-        numero_2:float)->float:
+def sumar_dos_numeros(numero_1: float, numero_2: float) -> float:
 
     """
     Operacion 'sumar' de dos numeros reales.
@@ -13,7 +10,8 @@ def sumar_dos_numeros(
 
     return numero_1 + numero_2
 
-def maximo_lista(lista:list)->float:
+
+def maximo_lista(lista: list) -> float:
     """
     Encontrar el valor maximo de una lista
     de valores numericos.
@@ -22,11 +20,9 @@ def maximo_lista(lista:list)->float:
     :return: valor maximo de la lista
     """
 
-    if lista==[]:
+    if lista == []:
         result = 0
     else:
         result = max(lista)
 
     return result
-
-

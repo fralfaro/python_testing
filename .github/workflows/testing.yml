@@ -16,9 +16,18 @@ jobs:
         run: pip install poetry
       - name: Activate venv
         run: poetry install
+      - name: Run pre-commit
+        run: poetry run pre-commit run --all
       - name: Run tests
         run: poetry run pytest --cov=./ --cov-report=xml
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
+      - name: Build Documentation
+        run: poetry run mkdocs build --site-dir public
+      - name: GitHub Pages action
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
