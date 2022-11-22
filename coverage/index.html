@@ -316,18 +316,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduccion" class="md-nav__link">
-    Introducción
+  <a href="#inroduccion" class="md-nav__link">
+    Inroducción
+  </a>
+  
+    <nav class="md-nav" aria-label="Inroducción">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beneficios" class="md-nav__link">
+    Beneficios
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-se-mide" class="md-nav__link">
+    ¿Cómo se mide?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pytest-cov" class="md-nav__link">
+    Pytest-Cov
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#reporting" class="md-nav__link">
-    Reporting
+  <a href="#casos-de-usos" class="md-nav__link">
+    Casos de Usos
   </a>
   
-    <nav class="md-nav" aria-label="Reporting">
+    <nav class="md-nav" aria-label="Casos de Usos">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -374,6 +401,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#porcentaje-ideal-de-cobertura" class="md-nav__link">
+    Porcentaje Ideal de cobertura
+  </a>
   
 </li>
       
@@ -412,18 +446,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#introduccion" class="md-nav__link">
-    Introducción
+  <a href="#inroduccion" class="md-nav__link">
+    Inroducción
+  </a>
+  
+    <nav class="md-nav" aria-label="Inroducción">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#beneficios" class="md-nav__link">
+    Beneficios
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-se-mide" class="md-nav__link">
+    ¿Cómo se mide?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pytest-cov" class="md-nav__link">
+    Pytest-Cov
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#reporting" class="md-nav__link">
-    Reporting
+  <a href="#casos-de-usos" class="md-nav__link">
+    Casos de Usos
   </a>
   
-    <nav class="md-nav" aria-label="Reporting">
+    <nav class="md-nav" aria-label="Casos de Usos">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -473,6 +534,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#porcentaje-ideal-de-cobertura" class="md-nav__link">
+    Porcentaje Ideal de cobertura
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -489,26 +557,69 @@
 
 
 <h1 id="coverage">Coverage</h1>
-<h2 id="introduccion">Introducción</h2>
-<p>Este plugin produce informes de cobertura. En comparación con el uso de
+<h2 id="inroduccion">Inroducción</h2>
+<p>La <strong>cobertura</strong> (o <strong>coverage</strong>) de un código corresponde a una métrica 
+de prueba de software que 
+determina la cantidad de líneas de código que se validan 
+con éxito en un procedimiento del test, lo que a 
+su vez ayuda a analizar la exhaustividad con la que se 
+verifica un software.</p>
+<p>Las empresas deben 
+asegurarse de que el software que desarrollan 
+cumpla con todas las características esenciales 
+de calidad: </p>
+<ul>
+<li>corrección</li>
+<li>confiabilidad</li>
+<li>eficacia,</li>
+<li>seguridad</li>
+<li>mantenibilidad. </li>
+</ul>
+<p>Esto solo puede ser posible revisando minuciosamente el producto de software.</p>
+<p>La cobertura de código es una de esas métricas de prueba de software que puede ayudar a evaluar el rendimiento de la prueba y los aspectos de calidad de cualquier software.</p>
+<h3 id="beneficios">Beneficios</h3>
+<p>El análisis de cobertura de código solo se puede utilizar 
+para la validación de casos de prueba que se ejecutan en el 
+código fuente y no para la evaluación del producto de software.
+Además, no evalúa si el código fuente está libre de errores ni prueba si un código escrito es correcto.</p>
+<p>Algunos beneficios:</p>
+<ul>
+<li>
+<p><strong>Fácil mantenimiento del código base</strong>: escribir código escalable es fundamental para ampliar el programa de software mediante la introducción de funcionalidades nuevas o modificadas. Sin embargo, es difícil determinar si el código escrito es escalable. </p>
+</li>
+<li>
+<p><strong>Exposición de código incorrecto</strong>: el análisis continuo ayudará a los desarrolladores a comprender el código incorrecto, muerto y sin usar. </p>
+</li>
+<li>
+<p><strong>Tiempo de comercialización más rápido</strong>: con la ayuda de esta métrica, los desarrolladores pueden terminar el proceso de desarrollo de software más rápido, aumentando así su productividad y eficiencia. </p>
+</li>
+</ul>
+<h3 id="como-se-mide">¿Cómo se mide?</h3>
+<p>Para calcular el porcentaje de cobertura del código,
+simplemente use la siguiente fórmula:</p>
+<blockquote>
+<p><strong>Porcentaje de cobertura de código</strong> = (Número de líneas de código ejecutadas por un algoritmo de prueba/Número total de líneas de código en un componente del sistema) * 100.</p>
+</blockquote>
+<p><img src="../images/coverage.png" alt="img python"   ></p>
+<h2 id="pytest-cov">Pytest-Cov</h2>
+<p>La librería <a href="https://pytest-cov.readthedocs.io/en/latest/">pytest-cov</a> es el plugin utilizado para los informes de cobertura.</p>
+<p>En comparación con el uso de
 <code>coverage run</code>, este complemento tiene algunos extras:</p>
 <ul>
-<li>Soporte de subprocesos: puede bifurcar o ejecutar cosas en un
+<li><strong>Soporte de subprocesos</strong>: puede bifurcar o ejecutar cosas en un
     subproceso y estará cubierto sin ningún problema.</li>
-<li>Soporte de <code>Xdist</code>: puede usar todas las funciones de pytest-xdist y
+<li><strong>Soporte de <code>Xdist</code></strong>: puede usar todas las funciones de pytest-xdist y
     aún obtener cobertura.</li>
-<li>Comportamiento constante de Pytest. Si ejecuta la sentencia
+<li><strong>Comportamiento constante de Pytest</strong>. Si ejecuta la sentencia
     <code>coverage run -m pytest</code>, tendrá <code>sys.path</code> ligeramente diferente
     (CWD estará en él, a diferencia de cuando se ejecuta <code>pytest</code>).</li>
-</ul>
-<h2 id="reporting">Reporting</h2>
-<ul>
 <li>Es posible generar cualquier combinación de informes para una sola
     ejecución de test.</li>
 <li>Los informes disponibles son terminales (con o sin los números de
     línea que faltan), HTML, XML y código fuente anotado.</li>
 </ul>
-<p>Lo primero es replicar el ejemplo de la seción <strong>Pytest</strong>:</p>
+<h2 id="casos-de-usos">Casos de Usos</h2>
+<p>Lo primero es replicar el ejemplo de la seción <a href="../pytest/">Pytest</a>.</p>
 <h3 id="caso-01">Caso 01</h3>
 <p>El informe del terminal sin números de línea (default):</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="err">!</span><span class="n">pytest</span> <span class="o">--</span><span class="n">cov</span><span class="o">-</span><span class="n">report</span> <span class="n">term</span> <span class="o">--</span><span class="n">cov</span><span class="o">=</span><span class="n">src</span>
@@ -664,6 +775,19 @@ continua, donde se necesita un archivo de cobertura para el
 procesamiento posterior, pero no es necesario ver un informe local. Por
 ejemplo, las pruebas realizadas en <code>Travis-CI</code> podrían generar un
 archivo <code>.coverage</code> para usar con <code>Coveralls</code>.</p>
+<h2 id="porcentaje-ideal-de-cobertura">Porcentaje Ideal de cobertura</h2>
+<p>Una sorprendente cobertura de código del 100 % significa que el
+código está 100 % libre de errores. Ningún error indica que los casos 
+de prueba han cubierto todos los criterios y requisitos de la aplicación de software.
+Entonces, si ese es el caso, </p>
+<ul>
+<li>¿cómo evaluamos si los scripts de prueba han cumplido con una amplia gama de posibilidades? </li>
+<li>¿Qué pasa si los casos de prueba han cubierto los requisitos incorrectos?</li>
+<li>¿Qué pasa si los casos de prueba no cumplieron con algunos requisitos importantes? </li>
+</ul>
+<p>Entonces, ¿cuál es el porcentaje de cobertura ideal que preguntas? El único enfoque y objetivo de los desarrolladores y tester debería ser 
+escribir tests que no sean vagos. No concentrarse en lograr una cobertura del 100 por ciento.</p>
+<p>El análisis debe combinarse con tests robustos y escalables, que cubran todas las áreas funcionales y no funcionales del código fuente.</p>
 
 
 
