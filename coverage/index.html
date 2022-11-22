@@ -558,12 +558,10 @@
 
 <h1 id="coverage">Coverage</h1>
 <h2 id="introduccion">Introducción</h2>
-<p>La <strong>cobertura</strong> (o <strong>coverage</strong>) de un código corresponde a una métrica 
-de prueba de software que 
+<p>La <strong>cobertura</strong> (o <strong>coverage</strong>) de un código corresponde a una métrica que 
 determina la cantidad de líneas de código que se validan 
-con éxito en un procedimiento del test, lo que a 
-su vez ayuda a analizar la exhaustividad con la que se 
-verifica un software.</p>
+con éxito en un procedimiento de testing, lo que a 
+su vez ayuda a analizar en exhaustividad el software.</p>
 <p>Las empresas deben 
 asegurarse de que el software que desarrollan 
 cumpla con todas las características esenciales 
@@ -575,11 +573,9 @@ de calidad: </p>
 <li>seguridad</li>
 <li>mantenibilidad. </li>
 </ul>
-<p>Esto solo puede ser posible revisando minuciosamente el producto de software.</p>
-<p>La cobertura de código es una de esas métricas de prueba de software que puede ayudar a evaluar el rendimiento de la prueba y los aspectos de calidad de cualquier software.</p>
 <h3 id="beneficios">Beneficios</h3>
 <p>El análisis de cobertura de código solo se puede utilizar 
-para la validación de casos de prueba que se ejecutan en el 
+para la validación de casos de tests que se ejecutan en el 
 código fuente y no para la evaluación del producto de software.
 Además, no evalúa si el código fuente está libre de errores ni prueba si un código escrito es correcto.</p>
 <p>Algunos beneficios:</p>
@@ -773,17 +769,17 @@ src/tests/srel_test.py ...                                               [100%]
 <p>Este modo puede ser especialmente útil en servidores de integración
 continua, donde se necesita un archivo de cobertura para el
 procesamiento posterior, pero no es necesario ver un informe local. Por
-ejemplo, las pruebas realizadas en <code>Travis-CI</code> podrían generar un
+ejemplo, los tests realizados en <code>Travis-CI</code> podrían generar un
 archivo <code>.coverage</code> para usar con <code>Coveralls</code>.</p>
 <h2 id="porcentaje-ideal-de-cobertura">Porcentaje Ideal de cobertura</h2>
 <p>Una sorprendente cobertura de código del 100 % significa que el
 código está 100 % libre de errores. Ningún error indica que los casos 
-de prueba han cubierto todos los criterios y requisitos de la aplicación de software.
+de tests han cubierto todos los criterios y requisitos de la aplicación de software.
 Entonces, si ese es el caso, </p>
 <ul>
-<li>¿cómo evaluamos si los scripts de prueba han cumplido con una amplia gama de posibilidades? </li>
-<li>¿Qué pasa si los casos de prueba han cubierto los requisitos incorrectos?</li>
-<li>¿Qué pasa si los casos de prueba no cumplieron con algunos requisitos importantes? </li>
+<li>¿cómo evaluamos si los scripts de tests han cumplido con una amplia gama de posibilidades? </li>
+<li>¿Qué pasa si los tests han cubierto los requisitos incorrectos?</li>
+<li>¿Qué pasa si los tests no cumplieron con algunos requisitos importantes? </li>
 </ul>
 <p>Entonces, ¿cuál es el porcentaje de cobertura ideal que preguntas? El único enfoque y objetivo de los desarrolladores y tester debería ser 
 escribir tests que no sean vagos. No concentrarse en lograr una cobertura del 100 por ciento.</p>
