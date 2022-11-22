@@ -86,7 +86,7 @@ plugins:
 
 # TOC
 nav:
-    - index.md
-    - intro.md
+    - Home: index.md
+    - TDD: intro.md
     - pytest.md
     - coverage.md
