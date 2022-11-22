@@ -1,29 +1,83 @@
 # Coverage
 
-## Introducción
+## Inroducción 
 
-Este plugin produce informes de cobertura. En comparación con el uso de
+La **cobertura** (o **coverage**) de un código corresponde a una métrica 
+de prueba de software que 
+determina la cantidad de líneas de código que se validan 
+con éxito en un procedimiento del test, lo que a 
+su vez ayuda a analizar la exhaustividad con la que se 
+verifica un software.
+
+Las empresas deben 
+asegurarse de que el software que desarrollan 
+cumpla con todas las características esenciales 
+de calidad: 
+
+* corrección
+* confiabilidad
+* eficacia,
+* seguridad
+* mantenibilidad. 
+
+Esto solo puede ser posible revisando minuciosamente el producto de software.
+
+
+La cobertura de código es una de esas métricas de prueba de software que puede ayudar a evaluar el rendimiento de la prueba y los aspectos de calidad de cualquier software.
+
+### Beneficios
+
+El análisis de cobertura de código solo se puede utilizar 
+para la validación de casos de prueba que se ejecutan en el 
+código fuente y no para la evaluación del producto de software.
+Además, no evalúa si el código fuente está libre de errores ni prueba si un código escrito es correcto.
+
+Algunos beneficios:
+
+* **Fácil mantenimiento del código base**: escribir código escalable es fundamental para ampliar el programa de software mediante la introducción de funcionalidades nuevas o modificadas. Sin embargo, es difícil determinar si el código escrito es escalable. 
+
+
+* **Exposición de código incorrecto**: el análisis continuo ayudará a los desarrolladores a comprender el código incorrecto, muerto y sin usar. 
+
+
+* **Tiempo de comercialización más rápido**: con la ayuda de esta métrica, los desarrolladores pueden terminar el proceso de desarrollo de software más rápido, aumentando así su productividad y eficiencia. 
+
+
+### ¿Cómo se mide?
+
+Para calcular el porcentaje de cobertura del código,
+simplemente use la siguiente fórmula:
+
+> **Porcentaje de cobertura de código** = (Número de líneas de código ejecutadas por un algoritmo de prueba/Número total de líneas de código en un componente del sistema) * 100.
+
+ 
+<img src="../images/coverage.png" alt="img python"   >
+
+
+
+
+## Pytest-Cov
+
+La librería [pytest-cov](https://pytest-cov.readthedocs.io/en/latest/) es el plugin utilizado para los informes de cobertura.
+
+En comparación con el uso de
 `coverage run`, este complemento tiene algunos extras:
 
-  - Soporte de subprocesos: puede bifurcar o ejecutar cosas en un
+  - **Soporte de subprocesos**: puede bifurcar o ejecutar cosas en un
     subproceso y estará cubierto sin ningún problema.
-  - Soporte de `Xdist`: puede usar todas las funciones de pytest-xdist y
+  - **Soporte de `Xdist`**: puede usar todas las funciones de pytest-xdist y
     aún obtener cobertura.
-  - Comportamiento constante de Pytest. Si ejecuta la sentencia
+  - **Comportamiento constante de Pytest**. Si ejecuta la sentencia
     `coverage run -m pytest`, tendrá `sys.path` ligeramente diferente
     (CWD estará en él, a diferencia de cuando se ejecuta `pytest`).
-
-
-## Reporting
-
   - Es posible generar cualquier combinación de informes para una sola
     ejecución de test.
   - Los informes disponibles son terminales (con o sin los números de
     línea que faltan), HTML, XML y código fuente anotado.
 
-Lo primero es replicar el ejemplo de la seción **Pytest**:
+## Casos de Usos
 
-
+Lo primero es replicar el ejemplo de la seción [Pytest](pytest.md).
 
 ### Caso 01
 
@@ -236,4 +290,18 @@ procesamiento posterior, pero no es necesario ver un informe local. Por
 ejemplo, las pruebas realizadas en `Travis-CI` podrían generar un
 archivo `.coverage` para usar con `Coveralls`.
 
+## Porcentaje Ideal de cobertura
 
+Una sorprendente cobertura de código del 100 % significa que el
+código está 100 % libre de errores. Ningún error indica que los casos 
+de prueba han cubierto todos los criterios y requisitos de la aplicación de software.
+Entonces, si ese es el caso, 
+
+* ¿cómo evaluamos si los scripts de prueba han cumplido con una amplia gama de posibilidades? 
+* ¿Qué pasa si los casos de prueba han cubierto los requisitos incorrectos?
+* ¿Qué pasa si los casos de prueba no cumplieron con algunos requisitos importantes? 
+
+Entonces, ¿cuál es el porcentaje de cobertura ideal que preguntas? El único enfoque y objetivo de los desarrolladores y tester debería ser 
+escribir tests que no sean vagos. No concentrarse en lograr una cobertura del 100 por ciento.
+
+El análisis debe combinarse con tests robustos y escalables, que cubran todas las áreas funcionales y no funcionales del código fuente.
