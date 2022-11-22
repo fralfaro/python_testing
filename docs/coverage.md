@@ -1,6 +1,6 @@
 # Coverage
 
-## Inroducción 
+## Introducción 
 
 La **cobertura** (o **coverage**) de un código corresponde a una métrica 
 de prueba de software que 
