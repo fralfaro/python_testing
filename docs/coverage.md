@@ -2,12 +2,10 @@
 
 ## Introducción 
 
-La **cobertura** (o **coverage**) de un código corresponde a una métrica 
-de prueba de software que 
+La **cobertura** (o **coverage**) de un código corresponde a una métrica que 
 determina la cantidad de líneas de código que se validan 
-con éxito en un procedimiento del test, lo que a 
-su vez ayuda a analizar la exhaustividad con la que se 
-verifica un software.
+con éxito en un procedimiento de testing, lo que a 
+su vez ayuda a analizar en exhaustividad el software.
 
 Las empresas deben 
 asegurarse de que el software que desarrollan 
@@ -20,15 +18,10 @@ de calidad:
 * seguridad
 * mantenibilidad. 
 
-Esto solo puede ser posible revisando minuciosamente el producto de software.
-
-
-La cobertura de código es una de esas métricas de prueba de software que puede ayudar a evaluar el rendimiento de la prueba y los aspectos de calidad de cualquier software.
-
 ### Beneficios
 
 El análisis de cobertura de código solo se puede utilizar 
-para la validación de casos de prueba que se ejecutan en el 
+para la validación de casos de tests que se ejecutan en el 
 código fuente y no para la evaluación del producto de software.
 Además, no evalúa si el código fuente está libre de errores ni prueba si un código escrito es correcto.
 
@@ -287,19 +280,19 @@ terminal:
 Este modo puede ser especialmente útil en servidores de integración
 continua, donde se necesita un archivo de cobertura para el
 procesamiento posterior, pero no es necesario ver un informe local. Por
-ejemplo, las pruebas realizadas en `Travis-CI` podrían generar un
+ejemplo, los tests realizados en `Travis-CI` podrían generar un
 archivo `.coverage` para usar con `Coveralls`.
 
 ## Porcentaje Ideal de cobertura
 
 Una sorprendente cobertura de código del 100 % significa que el
 código está 100 % libre de errores. Ningún error indica que los casos 
-de prueba han cubierto todos los criterios y requisitos de la aplicación de software.
+de tests han cubierto todos los criterios y requisitos de la aplicación de software.
 Entonces, si ese es el caso, 
 
-* ¿cómo evaluamos si los scripts de prueba han cumplido con una amplia gama de posibilidades? 
-* ¿Qué pasa si los casos de prueba han cubierto los requisitos incorrectos?
-* ¿Qué pasa si los casos de prueba no cumplieron con algunos requisitos importantes? 
+* ¿cómo evaluamos si los scripts de tests han cumplido con una amplia gama de posibilidades? 
+* ¿Qué pasa si los tests han cubierto los requisitos incorrectos?
+* ¿Qué pasa si los tests no cumplieron con algunos requisitos importantes? 
 
 Entonces, ¿cuál es el porcentaje de cobertura ideal que preguntas? El único enfoque y objetivo de los desarrolladores y tester debería ser 
 escribir tests que no sean vagos. No concentrarse en lograr una cobertura del 100 por ciento.
